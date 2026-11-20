@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volver al futuro — Removy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="vhs-noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="tracking-line" aria-hidden="true"></div>
+
+  <div class="app-shell">
+   
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Removy, Inicio">
+        <span class="brand-name">REMOVY</span>
+      </a>
+
+      <nav class="topnav" aria-label="Navegación principal">
+        <a class="nav-item active" href="#">Inicio</a>
+        <a class="nav-item" href="#">Buscar</a>
+        <a class="nav-item" href="#">Popular</a>
+        <a class="nav-item" href="#">Favoritos</a>
+      </nav>
+
+      <div class="topbar-right">
+        <button class="icon-btn" type="button" aria-label="Ajustes">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+        </button>
+        <button class="profile" type="button">yo <span class="avatar">R</span></button>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: una sola pantalla, sin scroll -->
+    <main class="stage">
+      <!-- COLUMNA IZQUIERDA -->
+      <section class="info-column" aria-labelledby="feature-title">
+        <p class="kicker">
+          <span class="kicker-mark">▸</span>
+          PRESENTA · EDICIÓN VHS · 1985
+        </p>
+
+        <h1 id="feature-title" class="feature-title">
+          VOLVER<br>
+          <span>AL</span><br>
+          FUTURO
+        </h1>
+
+        <div class="feature-meta">
+          <span class="tag">CIENCIA FICCIÓN</span>
+          <span class="tag">AVENTURA</span>
+          <span class="year">1985</span>
+          <span class="runtime">1 h 56 min</span>
+          <span class="rating" aria-label="5 de 5 estrellas">
+            <span class="stars">★★★★★</span>
+            <span class="rating-number">5/5</span>
+          </span>
+        </div>
+
+        <p class="synopsis">
+          Tras viajar accidentalmente treinta años al pasado en un DeLorean modificado,
+          el joven Marty McFly debe lograr que sus padres se enamoren para salvar su
+          propia existencia.
+        </p>
+
+        <div class="actions">
+          <button class="btn btn-play" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+            PLAY NOW
+          </button>
+          <button class="btn btn-trailer" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M10 9l6 3-6 3z"/></svg>
+            TRAILER
+          </button>
+        </div>
+
+        <div class="episodes">
+          <div class="episodes-head">
+            <h2>SECUELAS</h2>
+            <span>2 TÍTULOS · 1989 / 1990</span>
+          </div>
+          <ol class="episode-list">
+            <li><span class="ep-num">II</span><span class="ep-name">VOLVER AL FUTURO II</span><span class="ep-len">1989</span></li>
+            <li><span class="ep-num">III</span><span class="ep-name">VOLVER AL FUTURO III</span><span class="ep-len">1990</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- COLUMNA DERECHA: cartel + recomendados -->
+      <aside class="visual-column" aria-label="Cartel y títulos similares">
+        <figure class="feature-poster">
+          <img src="assets/back-to-the-future.jpg" alt="Cartel de Volver al futuro">
+          <figcaption>
+            <span class="poster-label">ARCHIVO Nº 085</span>
+            <span class="poster-code">VHS · REMASTERIZADO</span>
+          </figcaption>
+          <div class="poster-vignette" aria-hidden="true"></div>
+        </figure>
+
+        <div class="more-like">
+          <div class="more-head">
+            <h2>MÁS COMO ESTO</h2>
+            <span>▸ 03 TÍTULOS</span>
+          </div>
+          <div class="mini-posters">
+            <article class="mini-card" tabindex="0">
+              <img src="assets/et.jpg" alt="Cartel de E.T. el extraterrestre">
+              <h3>E.T. EL EXTRATERRESTRE</h3>
+              <p>1982 · A. Spielberg</p>
+            </article>
+            <article class="mini-card" tabindex="0">
+              <img src="assets/casablanca.jpg" alt="Cartel de Casablanca">
+              <h3>CASABLANCA</h3>
+              <p>1942 · M. Curtiz</p>
+            </article>
+            <article class="mini-card" tabindex="0">
+              <img src="assets/mummy-returns.jpg" alt="Cartel de The Mummy Returns">
+              <h3>LA MOMIA REGRESA</h3>
+              <p>2001 · S. Sommers</p>
+            </article>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
